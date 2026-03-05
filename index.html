@@ -212,10 +212,6 @@
         }
 
         .featured-project {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
             margin-bottom: 3.5rem;
             padding-bottom: 3.5rem;
             border-bottom: 1px solid rgba(78, 42, 132, 0.1);
@@ -223,9 +219,10 @@
 
         .featured-image {
             width: 100%;
-            aspect-ratio: 4 / 3;
+            aspect-ratio: 21 / 9;
             background: linear-gradient(135deg, #e8e8e8 0%, #ddd 100%);
             border: 1px solid rgba(78, 42, 132, 0.1);
+            margin-bottom: 2rem;
         }
 
         .featured-content h3 {
@@ -282,6 +279,86 @@
             font-size: 0.95rem;
             color: #666;
             line-height: 1.7;
+        }
+
+        /* Writing Section */
+        .writing {
+            padding: 3rem 0;
+            border-top: 1px solid rgba(78, 42, 132, 0.1);
+        }
+
+        .writing-category {
+            margin-bottom: 2.5rem;
+        }
+
+        .writing-category h3 {
+            font-family: 'Georgia', 'Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: #4E2A84;
+        }
+
+        .publication-item {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 2px solid #e8e8e8;
+        }
+
+        .publication-item .authors {
+            font-size: 0.95rem;
+            color: #333;
+            margin-bottom: 0.3rem;
+        }
+
+        .publication-item .title {
+            font-size: 1rem;
+            font-style: italic;
+            color: #1a1a1a;
+            margin-bottom: 0.3rem;
+            line-height: 1.5;
+        }
+
+        .publication-item .venue {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Speaking Section */
+        .speaking {
+            padding: 3rem 0;
+            border-top: 1px solid rgba(78, 42, 132, 0.1);
+        }
+
+        .speaking-category {
+            margin-bottom: 2.5rem;
+        }
+
+        .speaking-category h3 {
+            font-family: 'Georgia', 'Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: #4E2A84;
+        }
+
+        .speaking-item {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 2px solid #e8e8e8;
+        }
+
+        .speaking-item .talk-title {
+            font-size: 1rem;
+            color: #1a1a1a;
+            margin-bottom: 0.3rem;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+
+        .speaking-item .event-info {
+            font-size: 0.9rem;
+            color: #666;
         }
 
         /* Contact Section */
@@ -423,6 +500,8 @@
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#writing">Writing</a></li>
+                    <li><a href="#speaking">Speaking</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li>
                         <a href="https://www.linkedin.com/in/ctkmet/" target="_blank" title="LinkedIn">
@@ -475,26 +554,135 @@
             <div class="featured-project">
                 <div class="featured-image"></div>
                 <div class="featured-content">
-                    <h3>Featured Project: Marketing Platform Transformation</h3>
-                    <p>Led a comprehensive overhaul of the customer marketing platform architecture, integrating multi-channel capabilities with unified data insights. This initiative reduced manual handoffs by 70%, increased campaign personalization depth by 3x, and improved team collaboration across departments. The project demonstrated how thoughtful technology infrastructure directly enables better customer experiences.</p>
+                    <h3>From Prompt to Production</h3>
+                    <p>Teaching marketers to build technology rather than simply use it.</p>
+                    <p>In the <i>Vibe Coding: From Prompt to Portfolio</i> workshop within MarTech Studio, students construct a lightweight marketing technology stack using Visual Studio Code, GitHub Copilot, Git, and GitHub Pages. Through this process, students learn how AI-assisted coding environments allow marketers to design and deploy digital experiences without traditional engineering backgrounds.</p>
+                    <p>Using this stack, students build and deploy their own portfolio websites, moving from prompt to production while learning the fundamentals of version control, deployment workflows, and AI-assisted development.</p>
+                    <p>The goal is not to turn marketers into software engineers, but to help them understand how modern marketing systems are built and how AI tools expand their ability to prototype and test ideas quickly.</p>
                 </div>
             </div>
             
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image"></div>
-                    <h3>Integrated Customer Experience Strategy</h3>
-                    <p>Developed a comprehensive framework that unified customer data and touchpoints across multiple channels, enabling personalized journeys and improving engagement by 40%.</p>
+                    <h3>MarTech Stack Design</h3>
+                    <p>Building frameworks that help organizations understand how technologies interact across the customer lifecycle. My work integrates customer intelligence, personalization engines, analytics platforms, and engagement tools into cohesive systems—enabling marketers to move beyond individual tools toward scalable marketing ecosystems.</p>
                 </div>
                 <div class="project-card">
                     <div class="project-image"></div>
-                    <h3>MarTech Implementation & Training</h3>
-                    <p>Led the selection, deployment, and adoption of enterprise marketing technology platforms while building internal expertise. Streamlined workflows and reduced manual processes by 60%.</p>
+                    <h3>Data Storytelling and Strategic Insight</h3>
+                    <p>Helping students and organizations translate complex datasets into strategic narratives through visualization, analysis, and frameworks like the Ansoff matrix. Students learn to move beyond describing data toward identifying opportunities, supporting recommendations, and recognizing what may be missing.</p>
                 </div>
                 <div class="project-card">
                     <div class="project-image"></div>
-                    <h3>Data-Driven Campaign Optimization</h3>
-                    <p>Designed testing frameworks and analytics dashboards to measure campaign performance. Insights informed strategy refinements that consistently increased ROI across integrated marketing initiatives.</p>
+                    <h3>Experiential Campaign Management</h3>
+                    <p>Student teams design and launch live email campaigns using CRM and marketing automation platforms, then track opens, clickthroughs, and conversions in real time. These projects transform theoretical concepts into measurable outcomes, building confidence to operate in real marketing environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Writing & Publications Section -->
+    <section id="writing" class="writing">
+        <div class="container">
+            <h2 class="section-title">Writing & Publications</h2>
+            
+            <div style="margin-top: 3rem;">
+                <!-- Peer-Reviewed Research -->
+                <div class="writing-category">
+                    <h3>Peer-Reviewed Research</h3>
+                    
+                    <div class="publication-item">
+                        <div class="authors">Tang Kmet, Carolyn & Copulsky, Jonathan (2024)</div>
+                        <div class="title">The Future of Personalisation: What New Technologies Are Learning About Customers</div>
+                        <div class="venue">Applied Marketing Analytics, Vol. 9 Issue 4</div>
+                    </div>
+                    
+                    <div class="publication-item">
+                        <div class="authors">Tang Kmet, Carolyn & Copulsky, Jonathan (2024)</div>
+                        <div class="title">Augmenting Customer Lifetime Value with Omnichannel Engagement</div>
+                        <div class="venue">Applied Marketing Analytics, Vol. 10 Issue 3</div>
+                    </div>
+                </div>
+                
+                <!-- Professional Writing -->
+                <div class="writing-category">
+                    <h3>Professional Writing</h3>
+                    
+                    <div class="publication-item">
+                        <div class="title">Keeping Pace with 21st Century Fraud</div>
+                        <div class="venue">Insight Magazine, Cover Story (2025)</div>
+                    </div>
+                    
+                    <div class="publication-item">
+                        <div class="title">No Apologies: Women Owning Their Actions Is the Shift the Workforce Needs</div>
+                        <div class="venue">Insight Magazine (2024)</div>
+                    </div>
+                </div>
+                
+                <!-- Media & Expert Commentary -->
+                <div class="writing-category">
+                    <h3>Media & Expert Commentary</h3>
+                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 1.5rem;">Articles featuring commentary or expert perspective.</p>
+                    
+                    <div class="publication-item">
+                        <div class="title">Using AI to Solve Real Problems</div>
+                        <div class="venue">Northwestern Engineering (MSAI Program), 2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaking & Conferences Section -->
+    <section id="speaking" class="speaking">
+        <div class="container">
+            <h2 class="section-title">Speaking & Conferences</h2>
+            
+            <div style="margin-top: 3rem;">
+                <!-- Invited Talks & Conference Presentations -->
+                <div class="speaking-category">
+                    <h3>Invited Talks & Conference Presentations</h3>
+                    
+                    <div class="speaking-item">
+                        <div class="talk-title">Emerging Technologies and the Future of Personalization</div>
+                        <div class="event-info">Technology for Marketing / Ecommerce Expo — London, UK (2024)</div>
+                    </div>
+                    
+                    <div class="speaking-item">
+                        <div class="talk-title">Emerging Technologies and the Future of Personalization</div>
+                        <div class="event-info">IMC Weekend — Chicago (2024)</div>
+                    </div>
+                    
+                    <div class="speaking-item">
+                        <div class="talk-title">Ethics of Empathy in Human/AI Marketing Interactions</div>
+                        <div class="event-info">Medill Faculty Colloquium (2025)</div>
+                    </div>
+                    
+                    <div class="speaking-item">
+                        <div class="talk-title">AI + Humans: The Power Duo Shaping the Future of Work</div>
+                        <div class="event-info">Medill IMC Conference — Speaker and Panel Host (2025)</div>
+                    </div>
+                </div>
+                
+                <!-- Panels & Industry Events -->
+                <div class="speaking-category">
+                    <h3>Panels & Industry Events</h3>
+                    
+                    <div class="speaking-item">
+                        <div class="talk-title">Building Strong Networks for Success</div>
+                        <div class="event-info">Technology for Marketing / Ecommerce Expo — London (2024)</div>
+                    </div>
+                    
+                    <div class="speaking-item">
+                        <div class="talk-title">CTRL + ALT + Future</div>
+                        <div class="event-info">Panelist, Medill IMC Program (2025)</div>
+                    </div>
+                    
+                    <div class="speaking-item">
+                        <div class="talk-title">Future of Media for Students</div>
+                        <div class="event-info">Illinois Broadcasters Association Conference (2024)</div>
+                    </div>
                 </div>
             </div>
         </div>
