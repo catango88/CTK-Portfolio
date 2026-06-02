@@ -109,7 +109,8 @@
         }
 
         .linkedin-icon,
-        .email-icon {
+        .email-icon,
+        .contact-card-icon {
             width: 20px;
             height: 20px;
             display: block;
@@ -246,6 +247,13 @@
             margin-bottom: 2rem;
         }
 
+        .featured-image.vibecoding-image {
+            background-image: url('images/vibecoding.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
         .featured-content h3 {
             font-family: 'Georgia', 'Garamond', serif;
             font-size: 1.6rem;
@@ -259,6 +267,11 @@
             font-size: 1rem;
             color: #555;
             line-height: 1.8;
+            margin-bottom: 1.25rem;
+        }
+
+        .featured-content p:last-child {
+            margin-bottom: 0;
         }
 
         .project-card {
@@ -279,6 +292,30 @@
 
         .project-card:hover .project-image {
             background: linear-gradient(135deg, #e8e8e8 0%, #ddd 100%);
+        }
+
+        .project-image.martech-stack-image {
+            background-image: url('images/martech_stack.png');
+            background-size: cover;
+            background-position: center 24%;
+            background-repeat: no-repeat;
+            filter: saturate(0.92) contrast(0.96);
+        }
+
+        .project-card:hover .project-image.martech-stack-image {
+            background-image: url('images/martech_stack.png');
+        }
+
+        .project-image.storytelling-image {
+            background-image: url('images/storytelling_framework.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: saturate(0.92) contrast(0.96);
+        }
+
+        .project-card:hover .project-image.storytelling-image {
+            background-image: url('images/storytelling_framework.jpg');
         }
 
         .project-image.experiential-image {
@@ -312,6 +349,11 @@
             font-size: 0.95rem;
             color: #666;
             line-height: 1.7;
+            margin-bottom: 1.25rem;
+        }
+
+        .project-card p:last-child {
+            margin-bottom: 0;
         }
 
         /* Writing Section */
@@ -413,9 +455,17 @@
             line-height: 1.8;
         }
 
-        .linkedin-button {
+        .contact-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-button {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 0.75rem;
             padding: 1rem 2.5rem;
             background-color: #4E2A84;
@@ -427,7 +477,7 @@
             border: 2px solid #4E2A84;
         }
 
-        .linkedin-button:hover {
+        .contact-button:hover {
             background-color: #ffffff;
             color: #4E2A84;
         }
@@ -526,7 +576,7 @@
                 padding: 1.5rem;
             }
 
-            .linkedin-button {
+            .contact-button {
                 padding: 0.8rem 2rem;
                 font-size: 0.9rem;
             }
@@ -547,6 +597,16 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <ul class="nav-links nav-social-links">
+                    <li>
+                        <a class="nav-icon-link" href="ctk.vcf" download="Carolyn-Tang-Kmet.vcf" title="Save Contact Info" aria-label="Save Contact Info">
+                            <svg class="contact-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                <path d="M7 10h5"></path>
+                                <path d="M7 14h7"></path>
+                                <circle cx="17" cy="11" r="2"></circle>
+                            </svg>
+                        </a>
+                    </li>
                     <li>
                         <a class="nav-icon-link" href="https://www.linkedin.com/in/ctkmet/" target="_blank" title="LinkedIn">
                             <svg class="linkedin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -604,24 +664,24 @@
             
             <!-- Featured Project -->
             <div class="featured-project">
-                <div class="featured-image"></div>
+                <div class="featured-image vibecoding-image"></div>
                 <div class="featured-content">
                     <h3>From Prompt to Production</h3>
                     <p>Teaching marketers to build technology rather than simply use it.</p>
                     <p>In the <i>Vibe Coding: From Prompt to Portfolio</i> workshop within MarTech Studio, students construct a lightweight marketing technology stack using Visual Studio Code, GitHub Copilot, Git, and GitHub Pages. Through this process, students learn how AI-assisted coding environments allow marketers to design and deploy digital experiences without traditional engineering backgrounds.</p>
                     <p>Using this stack, students build and deploy their own portfolio websites, moving from prompt to production while learning the fundamentals of version control, deployment workflows, and AI-assisted development.</p>
-                    <p>The goal is not to turn marketers into software engineers, but to help them understand how modern marketing systems are built and how AI tools expand their ability to prototype and test ideas quickly.</p>
+                    <p>The goal is to develop marketers who are confident engaging with emerging technologies. By building real solutions, students learn to adapt to unfamiliar tools and develop the confidence to evaluate, experiment with, and apply new technologies throughout their careers.</p>
                 </div>
             </div>
             
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image"></div>
+                    <div class="project-image martech-stack-image"></div>
                     <h3>MarTech Stack Design</h3>
                     <p>Building frameworks that help organizations understand how technologies interact across the customer lifecycle. My work integrates customer intelligence, personalization engines, analytics platforms, and engagement tools into cohesive systems—enabling marketers to move beyond individual tools toward scalable marketing ecosystems.</p>
                 </div>
                 <div class="project-card">
-                    <div class="project-image"></div>
+                    <div class="project-image storytelling-image"></div>
                     <h3>Data Storytelling and Strategic Insight</h3>
                     <p>Helping students and organizations translate complex datasets into strategic narratives through visualization, analysis, and frameworks like the Ansoff matrix. Students learn to move beyond describing data toward identifying opportunities, supporting recommendations, and recognizing what may be missing.</p>
                 </div>
@@ -751,12 +811,17 @@
             <div class="contact-content">
                 <h2 class="section-title" style="margin-bottom: 2rem;">Contact</h2>
                 <p>I'm interested in conversations about marketing innovation, technology strategy, and interdisciplinary collaboration. Let's connect.</p>
-                <a href="https://www.linkedin.com/in/ctkmet/" target="_blank" class="linkedin-button">
-                    <svg style="width: 18px; height: 18px;" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                    </svg>
-                    Connect on LinkedIn
-                </a>
+                <div class="contact-actions">
+                    <a href="ctk.vcf" download="Carolyn-Tang-Kmet.vcf" class="contact-button">
+                        Save Contact Info
+                    </a>
+                    <a href="https://www.linkedin.com/in/ctkmet/" target="_blank" class="contact-button">
+                        <svg style="width: 18px; height: 18px;" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                        </svg>
+                        Connect on LinkedIn
+                    </a>
+                </div>
             </div>
         </div>
     </section>
