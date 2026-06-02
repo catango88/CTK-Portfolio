@@ -1,18 +1,12 @@
 BEGIN:VCARD
 VERSION:3.0
-
 N:Kmet;Carolyn;Tang;;
 FN:Carolyn Tang Kmet
-
 ORG:Northwestern University
 TITLE:Clinical Associate Professor
-
 TEL;TYPE=WORK,VOICE:+18474913311
 EMAIL;TYPE=WORK:carolyn.kmet@northwestern.edu
-
 ADR;TYPE=WORK:;;1870 Campus Dr.;Evanston;IL;60208;USA
-
 URL:https://catango88.github.io/CTK-Portfolio/
 URL:https://www.linkedin.com/in/carolyntangkmet
-
 END:VCARD
